@@ -1,0 +1,26 @@
+button{
+    cursor: pointer;
+}
+#roda{
+  position: relative;
+  margin-bottom: 20px;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-color: black; 
+  border-radius: 50%;
+  animation: spin 5s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        left: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        left: 100%;
+    }
+  }
